@@ -96,9 +96,8 @@ nav.links a:hover, nav.links a.active{color:var(--ink); border-color:var(--gold)
 @media (min-width:960px){ nav.links{display:flex;} }
 
 .brandmark{display:inline-flex; align-items:center; gap:.55rem; font-family:'Playfair Display', serif; font-weight:600; font-size:1.5rem; letter-spacing:.02em; color:var(--ink); white-space:nowrap;}
-.brandmark .brand-icon{height:30px; width:auto; display:block;}
+.brandmark .brand-icon{height:30px; width:auto; display:block; border-radius:3px;}
 @media (min-width:768px){ .brandmark .brand-icon{height:36px;} }
-footer.site .brandmark .brand-icon{filter:brightness(0) invert(1);}
 
 .icon-btn{background:none; border:none; cursor:pointer; padding:.35rem; color:var(--ink); position:relative; display:inline-flex;}
 .icon-btn svg{width:19px; height:19px; stroke:currentColor; fill:none; stroke-width:1.4;}
