@@ -7,13 +7,16 @@ var PAMPAY_CATEGORIES = [
   { id: "sale", name: "Sale", active: false, img: null }
 ];
 
-// Productos. Textos, precios y colores originales sin modificar — solo se agregó
+// Productos. Textos y colores originales sin modificar — solo se agregó
 // "category" (para el menú/páginas de categoría) y "tag" (solo en productos donde es honesto: recién agregados).
+// Precios ajustados el 2026-09-24 a pedido de Pablo: reescalados linealmente para que
+// el más barato quede en $120.000 y el más caro en $160.000, manteniendo la misma
+// diferencia relativa entre todos (se sumó $78.000 parejo a cada precio original).
 var PAMPAY_PRODUCTS = [
   {
     id: "top-manga-larga-zadel",
     name: "Body Top Manga Larga Zadel",
-    price: 49000,
+    price: 127000,
     category: "bodys",
     detail: "Tela Mayatex y top tela Polilycra. Talla única (M-L). Top interno cosido.",
     colors: [
@@ -25,7 +28,7 @@ var PAMPAY_PRODUCTS = [
   {
     id: "blonda-espalda-zadel",
     name: "Body Blonda Espalda Zadel",
-    price: 54000,
+    price: 132000,
     category: "bodys",
     detail: "Tela Blonda con espalda descubierta. Talla única (M-L). Trae top interno cosido.",
     colors: [
@@ -36,7 +39,7 @@ var PAMPAY_PRODUCTS = [
   {
     id: "transparencia-escote",
     name: "Body Transparencia Escote",
-    price: 49000,
+    price: 127000,
     category: "bodys",
     detail: "Tiene strech. Talla única (M-L, no muy troza).",
     colors: [
@@ -52,7 +55,7 @@ var PAMPAY_PRODUCTS = [
   {
     id: "corset-blonda",
     name: "Corset Blonda",
-    price: 82000,
+    price: 160000,
     category: "bodys",
     detail: "Graduable en la espalda. Varillas internas y copa (talla 34 a 36). Talla única (M-L).",
     colors: [
@@ -63,7 +66,7 @@ var PAMPAY_PRODUCTS = [
   {
     id: "manga-larga-mayatex",
     name: "Body Manga Larga Mayatex",
-    price: 49000,
+    price: 127000,
     category: "bodys",
     detail: "Tiene strech. Talla única (M, no muy troza). Prenda delicada.",
     colors: [
@@ -80,7 +83,7 @@ var PAMPAY_PRODUCTS = [
   {
     id: "picapiedra-tira",
     name: "Body Picapiedra Tira",
-    price: 42000,
+    price: 120000,
     category: "bodys",
     detail: "Tiene strech. Talla única (M-L).",
     colors: [
@@ -92,7 +95,7 @@ var PAMPAY_PRODUCTS = [
   {
     id: "cruzado-grecia-zadel",
     name: "Body Cruzado Grecia Zadel",
-    price: 42000,
+    price: 120000,
     category: "bodys",
     tag: "Nuevo",
     detail: "Polilycra doble tela con nudo cruzado. Talla única (hasta M-L). Prenda íntima, sin cambio.",
@@ -105,7 +108,7 @@ var PAMPAY_PRODUCTS = [
   {
     id: "transparencia-silueta",
     name: "Body Transparencia Silueta",
-    price: 49000,
+    price: 127000,
     category: "bodys",
     tag: "Nuevo",
     detail: "Tiene strech, manga larga en malla transparente. Talla única (hasta M-L, no muy troza). Prenda íntima, sin cambio.",
